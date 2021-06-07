@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: fixed;
+  background-color: #eeeeee;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 20px;
+}
+
+#header-img {
+  height: 35px;
+}
+
+#nav-bar {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-link {
+  padding: 2.5px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.a-font {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 160px;
+}
+
+.form-container {
+  padding-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+form p {
+  font-size: 27px;
+  word-spacing: 3px;
+  padding-bottom: 10px;
+}
+
+form input {
+  height: 30px;
+  width: 275px;
+  margin-bottom: 10px;
+}
+
+form #submit {
+  font-size: 15px;
+  padding: 1px 20px;
+  background-color: #f1c40f;
+  cursor: pointer;
+}
+
+.features {
+  display: flex;
+}
+
+.logo-container i {
+  display: none;
+}
+
+.description-container {
+  padding: 40px 0;
+}
+
+.description-container p {
+  font-size: 27px;
+  text-align: center;
+}
+
+.description-container .small {
+  font-size: 15px;
+}
+
+.video-contaier {
+  padding-top: 40px;
+}
