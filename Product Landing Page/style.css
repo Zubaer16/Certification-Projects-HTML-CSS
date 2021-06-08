@@ -96,8 +96,14 @@ form #submit {
   cursor: pointer;
 }
 
+.features-container {
+  width: 100%;
+}
+
 .features {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-container i {
@@ -199,4 +205,22 @@ button {
 
 .footer-nav-link {
   padding: 0 10px;
+}
+
+@media (min-width: 551px) {
+  .logo-container {
+    padding-right: 50px;
+  }
+  .logo-container i {
+    display: initial;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #f1c40f;
+  }
+
+  .description-container p {
+    text-align: initial;
+    padding-right: 10px;
+  }
 }
