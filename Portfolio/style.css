@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  background-color: #be3144;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.nav ul li {
+  list-style-type: none;
+  padding: 0 20px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#welcome-section {
+  height: 100vh;
+  background-color: #35373a;
+  position: relative;
+}
+.welcome {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+.welcome h1 {
+  font-size: 3.6rem;
+  text-align: center;
+}
+
+@media (min-width: 461px) {
+  .nav {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
