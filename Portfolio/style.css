@@ -6,6 +6,9 @@
 
 .nav {
   background-color: #be3144;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
 
 .nav ul {
@@ -21,12 +24,12 @@
 }
 
 .nav ul li:hover {
-  background-color: #5a5fc9;
+  background-color: #363a85;
 }
 
 .nav ul li a {
   text-decoration: none;
-  color: aliceblue;
+  color: #f0f0f0;
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -42,16 +45,47 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 13%;
+  margin-top: 150px;
 }
 .welcome h1 {
   font-size: 3.6rem;
+  color: #f0f0f0;
 }
 
 .welcome p {
   color: #be3144;
   font-size: 2.5rem;
   font-weight: none;
+  font-style: italic;
+}
+
+#projects {
+  background-color: #45567d;
+  position: relative;
+}
+
+.project-header {
+  max-width: 600px;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.project-header h2 {
+  font-size: 2.7rem;
+  color: #f0f0f0;
+  text-align: center;
+  padding-bottom: 5px;
+  letter-spacing: 1.5;
+}
+
+.project-header hr {
+  color: 1px #f0f0f0;
+}
+
+@media (min-width: 424px) {
+  .welcome {
+    margin-top: 180px;
+  }
 }
 
 @media (min-width: 461px) {
