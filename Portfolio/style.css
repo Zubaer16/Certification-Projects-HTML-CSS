@@ -13,12 +13,15 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px;
 }
 
 .nav ul li {
   list-style-type: none;
-  padding: 0 20px;
+  padding: 20px;
+}
+
+.nav ul li:hover {
+  background-color: #5a5fc9;
 }
 
 .nav ul li a {
@@ -29,18 +32,26 @@
 }
 
 #welcome-section {
+  position: relative;
   height: 100vh;
   background-color: #35373a;
-  position: relative;
 }
 .welcome {
   position: absolute;
-  left: 50%;
-  top: 50%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 13%;
 }
 .welcome h1 {
   font-size: 3.6rem;
-  text-align: center;
+}
+
+.welcome p {
+  color: #be3144;
+  font-size: 2.5rem;
+  font-weight: none;
 }
 
 @media (min-width: 461px) {
