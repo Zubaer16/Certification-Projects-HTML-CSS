@@ -73,3 +73,21 @@ code {
   font-size: 15px;
   margin-right: 5%;
 }
+
+@media (min-width: 816px) {
+  .section-div {
+    margin-left: 250px;
+    padding: 2%;
+  }
+
+  #navbar {
+    position: fixed;
+  }
+
+  #navbar ul {
+    height: 100vh;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 1px solid;
+  }
+}
