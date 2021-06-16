@@ -68,6 +68,7 @@
   max-width: 600px;
   margin: auto;
   padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 .project-header h2 {
@@ -80,6 +81,41 @@
 
 .project-header hr {
   color: 1px #f0f0f0;
+}
+
+.project-grid {
+  display: flex;
+  flex-direction: column;
+  max-width: 731px;
+}
+
+.project-grid a {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.project-grid img {
+  width: 100%;
+  height: auto;
+}
+
+.project-grid p {
+  padding: 10px;
+  background-color: #303841;
+}
+
+.project-grid p span {
+  color: #303841;
+  transition: color 0.3s ease-out;
+}
+
+.project-grid:hover span {
+  color: orange;
 }
 
 @media (min-width: 424px) {
