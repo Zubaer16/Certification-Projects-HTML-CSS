@@ -62,6 +62,10 @@
 #projects {
   background-color: #45567d;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-header {
@@ -92,7 +96,9 @@
 .project-grid a {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
   text-decoration: none;
   color: #f0f0f0;
   font-size: 1.3rem;
@@ -109,18 +115,48 @@
   background-color: #303841;
 }
 
-.project-grid p span {
+.project-title p span {
   color: #303841;
   transition: color 0.3s ease-out;
 }
 
-.project-grid:hover span {
+.project-title:hover span {
   color: orange;
+}
+
+.button-link {
+  display: flex;
+  max-width: 731px;
+}
+
+.btn {
+  background-color: #303841;
+  width: auto;
+  height: auto;
+  margin: 50px auto 100px auto;
+  padding: 10px;
+  border-radius: 2px;
+  text-decoration: none;
+  color: #f0f0f0;
+}
+
+.btn i {
+  padding-left: 5px;
+}
+
+.btn-show-all {
+  font-size: 2rem;
+  background: #303841;
+  transition: background 0.3s ease-out;
+}
+
+.btn-show-all:hover {
+  background: #be3144;
 }
 
 @media (min-width: 424px) {
   .welcome {
-    margin-top: 180px;
+    margin-top: 250px;
   }
 }
 
@@ -128,5 +164,60 @@
   .nav {
     display: flex;
     flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 732px) {
+  .project-grid {
+    display: initial;
+    max-width: 1092px;
+  }
+
+  .project-grid a {
+    display: flex;
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    color: #f0f0f0;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .project-grid .project {
+    float: left;
+    width: 50%;
+  }
+
+  .project-grid::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  #projects::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  .button-link {
+    display: flex;
+    max-width: 1092px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1093px) {
+  .project-grid {
+    display: initial;
+    max-width: 1280px;
+  }
+
+  .project-grid .project {
+    width: 33%;
+  }
+
+  .button-link {
+    max-width: 1280px;
   }
 }
